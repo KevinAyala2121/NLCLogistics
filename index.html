@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NLC Logistic</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Swiper (CSS) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__inner header__inner--full">
+        <a class="brand" href="#inicio" aria-label="Ir a Inicio">
+          <img
+            src="assets/logo-nlc1.jpg"
+            alt="NLC Logistics"
+            class="brand__logo-img"
+          />
+        </a>
+
+        <!-- NAV DESKTOP -->
+        <nav class="nav nav--desktop" aria-label="Navegación principal">
+          <a class="nav__link" href="#inicio">Inicio</a>
+          <a class="nav__link" href="#sobre-nosotros">Sobre Nosotros</a>
+          <a class="nav__link" href="#mision-vision">Misión y Visión</a>
+          <a class="nav__link" href="#servicios">Servicios</a>
+          <a class="nav__link" href="#clientes">Nuestros Clientes</a>
+          <a class="nav__link" href="#ubicanos">Ubícanos</a>
+          <a class="nav__link" href="#contacto">Contacto</a>
+          <a
+            class="nav__link nav__link--highlight"
+            href="https://nlc.sistematranslog.com/web/Tracking/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Tracking Online
+          </a>
+        </nav>
+
+        <!-- BOTÓN HAMBURGUESA -->
+        <button
+          class="burger"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="navMobile"
+          type="button"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <!-- NAV MÓVIL -->
+      <nav id="navMobile" class="nav-mobile" aria-label="Menú móvil">
+        <a class="nav-mobile__link" href="#inicio">Inicio</a>
+        <a class="nav-mobile__link" href="#sobre-nosotros">Sobre Nosotros</a>
+        <a class="nav-mobile__link" href="#mision-vision">Misión y Visión</a>
+        <a class="nav-mobile__link" href="#servicios">Servicios</a>
+        <a class="nav-mobile__link" href="#clientes">Nuestros Clientes</a>
+        <a class="nav-mobile__link" href="#ubicanos">Ubícanos</a>
+        <a class="nav-mobile__link" href="#contacto">Contacto</a>
+        <a
+          class="nav-mobile__link nav-mobile__link--highlight"
+          href="https://nlc.sistematranslog.com/web/Tracking/index.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Tracking Online
+        </a>
+      </nav>
+    </header>
+
+    <!-- HERO / CARRUSEL -->
+    <section class="nlc-hero" id="inicio">
+      <div class="nlc-hero__grid">
+        <!-- MAIN SWIPER -->
+        <div class="nlc-hero__main">
+          <div class="swiper nlc-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="assets/carousel/slide1.jpg"
+                  alt="Logística internacional"
+                />
+                <div class="nlc-hero__overlay">
+                  <h2>Conectamos destinos</h2>
+                  <p>
+                    Transporte internacional aéreo, marítimo y terrestre con
+                    seguimiento.
+                  </p>
+                  <a class="nlc-hero__btn" href="#servicios">Ver servicios</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="assets/carousel/slide2.jpg"
+                  alt="Carga aérea y marítima"
+                />
+                <div class="nlc-hero__overlay">
+                  <h2>Carga marítima y aérea</h2>
+                  <p>
+                    Gestión de embarques, documentación y coordinación puerta a
+                    puerta.
+                  </p>
+                  <a class="nlc-hero__btn" href="#contacto"
+                    >Solicitar cotización</a
+                  >
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assets/carousel/slide3.jpg" alt="Tecnología" />
+                <div class="nlc-hero__overlay">
+                  <h2>Tecnología & tracking</h2>
+                  <p>
+                    Visibilidad y control en cada etapa del proceso logístico.
+                  </p>
+                  <a class="nlc-hero__btn" href="#tracking">Tracking Online</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assets/carousel/slide4.jpg" alt="Cobertura global" />
+                <div class="nlc-hero__overlay">
+                  <h2>Cobertura global</h2>
+                  <p>Red de aliados para conectar tu negocio con el mundo.</p>
+                  <a class="nlc-hero__btn" href="#clientes"
+                    >Nuestros clientes</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Botón next -->
+            <div
+              class="nlc-next"
+              aria-label="Siguiente"
+              role="button"
+              tabindex="0"
+            >
+              ›
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE (previews) -->
+        <aside class="nlc-hero__side">
+          <button class="nlc-card" data-go="1" type="button">
+            <img src="assets/carousel/slide2.jpg" alt="Preview 2" />
+            <div class="nlc-card__label">Carga marítima y aérea</div>
+          </button>
+
+          <button class="nlc-card" data-go="2" type="button">
+            <img src="assets/carousel/slide3.jpg" alt="Preview 3" />
+            <div class="nlc-card__label">Tecnología & tracking</div>
+          </button>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section id="sobre-nosotros" class="nlc-section">
+      <div class="nlc-section__inner">
+        <div class="nlc-card-box">
+          <h2>Sobre Nosotros</h2>
+
+          <p>
+            En <strong>NLC LOGISTICS</strong> somos un operador logístico
+            integral, comprometido en brindar soluciones desde el inicio hasta
+            el final de la cadena logística. Trabajamos junto a un equipo de
+            colaboradores altamente capacitados y especializados, preparados
+            para atender las necesidades específicas de cada cliente y sector
+            económico.
+          </p>
+
+          <p>
+            Nos convertimos en socios estratégicos de nuestros clientes,
+            identificando los costos totales de sus operaciones logísticas,
+            simplificando procesos y optimizando recursos. Estamos comprometidos
+            en mejorar la eficiencia de la cadena de abastecimiento,
+            permitiéndoles enfocarse plenamente en la esencia de su negocio.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISIÓN / VISIÓN / VALORES -->
+    <section id="mision-vision" class="nlc-section">
+      <div class="nlc-section__inner">
+        <div class="nlc-mv">
+          <h2 class="nlc-mv__title">Misión, Visión y Valores</h2>
+
+          <div class="nlc-mv__grid">
+            <article class="nlc-mv__card">
+              <h3>Misión</h3>
+              <p>
+                Brindar el mejor servicio, con eficiencia, garantizando
+                experiencia y predisposición para así poder impulsar el
+                crecimiento de los negocios internacionales de nuestros clientes
+                de la mejor manera posible.
+              </p>
+            </article>
+
+            <article class="nlc-mv__card">
+              <h3>Visión</h3>
+              <p>
+                Ser reconocidos como una organización empresarial especializada
+                en los servicios de comercio exterior tanto a nivel nacional
+                como internacional, liderando en todas las áreas de comercio
+                exterior en las que operamos.
+              </p>
+            </article>
+
+            <article class="nlc-mv__card">
+              <h3>Valores</h3>
+              <ul class="nlc-values">
+                <li>Responder y actuar con agilidad.</li>
+                <li>Equipo altamente capacitado.</li>
+                <li>Garantizar transparencia en cada proceso.</li>
+                <li>Asumir la responsabilidad de cada servicio prestado.</li>
+                <li>Respeto y trabajo en equipo.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLACEHOLDERS (para que el scroll del nav funcione ya) -->
+    <section id="servicios" class="nlc-section nlc-services">
+      <div class="nlc-section__inner">
+        <header class="nlc-services__header">
+          <h2 class="nlc-services__title">Servicios</h2>
+          <p class="nlc-services__subtitle">
+            Soluciones logísticas integrales para carga nacional e
+            internacional.
+          </p>
+        </header>
+
+        <!-- ✅ NUEVO: columnas independientes -->
+        <div class="nlc-services__cols">
+          <!-- COLUMNA 1 -->
+          <div class="nlc-services__col">
+            <!-- 1 -->
+            <details class="svc-item">
+              <summary class="svc-summary">
+                <span class="svc-icon">📦</span>
+                <span class="svc-title"
+                  >Carga suelta (LCL) y Contenedores (FCL)</span
+                >
+                <span class="svc-chevron">▾</span>
+              </summary>
+              <div class="svc-content">
+                <div class="svc-content__inner">
+                  <p>Manejo de carga suelta (LCL) y contenedores full (FCL).</p>
+                </div>
+              </div>
+            </details>
+
+            <!-- 4 -->
+            <details class="svc-item">
+              <summary class="svc-summary">
+                <span class="svc-icon">📏</span>
+                <span class="svc-title">Carga sobredimensionada</span>
+                <span class="svc-chevron">▾</span>
+              </summary>
+              <div class="svc-content">
+                <div class="svc-content__inner">
+                  <p>Manejo de carga sobredimensionada.</p>
+                </div>
+              </div>
+            </details>
+
+            <!-- 7 -->
+            <details class="svc-item">
+              <summary class="svc-summary">
+                <span class="svc-icon">🛡️</span>
+                <span class="svc-title"
+                  >Agenciamiento, inspección, embalaje y escoltas</span
+                >
+                <span class="svc-chevron">▾</span>
+              </summary>
+              <div class="svc-content">
+                <div class="svc-content__inner">
+                  <p>
+                    Agenciamiento, inspección de carga, embalaje y escoltas.
+                  </p>
+                </div>
+              </div>
+            </details>
+          </div>
+
+          <!-- COLUMNA 2 -->
+          <div class="nlc-services__col">
+            <!-- 2 -->
+            <details class="svc-item">
+              <summary class="svc-summary">
+                <span class="svc-icon">🏢</span>
+                <span class="svc-title">Almacenamiento y consolidación</span>
+                <span class="svc-chevron">▾</span>
+              </summary>
+              <div class="svc-content">
+                <div class="svc-content__inner">
+                  <p>
+                    Almacenamiento y gestiones de consolidación /
+                    desconsolidación.
+                  </p>
+                </div>
+              </div>
+            </details>
+
+            <!-- 5 -->
+            <details class="svc-item">
+              <summary class="svc-summary">
+                <span class="svc-icon">🌍</span>
+                <span class="svc-title"
+                  >Importación / Exportación (contenedorizada y a granel)</span
+                >
+                <span class="svc-chevron">▾</span>
+              </summary>
+              <div class="svc-content">
+                <div class="svc-content__inner">
+                  <p>
+                    Exportación e importación de carga contenedorizada y/o a
+                    granel con camiones plataforma o furgones.
+                  </p>
+                </div>
+              </div>
+            </details>
+
+            <!-- 8 -->
+            <details class="svc-item">
+              <summary class="svc-summary">
+                <span class="svc-icon">➕</span>
+                <span class="svc-title">Servicios adicionales a medida</span>
+                <span class="svc-chevron">▾</span>
+              </summary>
+              <div class="svc-content">
+                <div class="svc-content__inner">
+                  <p>
+                    Brindamos servicios adicionales para cubrir cualquier
+                    necesidad.
+                  </p>
+                </div>
+              </div>
+            </details>
+
+            <!-- 10 -->
+            <details class="svc-item svc-item--last">
+              <summary class="svc-summary">
+                <span class="svc-icon">💬</span>
+                <span class="svc-title">Consultoría logística</span>
+                <span class="svc-chevron">▾</span>
+              </summary>
+              <div class="svc-content">
+                <div class="svc-content__inner">
+                  <p>Consultoría logística.</p>
+                </div>
+              </div>
+            </details>
+          </div>
+
+          <!-- COLUMNA 3 -->
+          <div class="nlc-services__col">
+            <!-- 3 -->
+            <details class="svc-item">
+              <summary class="svc-summary">
+                <span class="svc-icon">🚚</span>
+                <span class="svc-title"
+                  >Carga consolidada (LTL) y camión completo (FTL)</span
+                >
+                <span class="svc-chevron">▾</span>
+              </summary>
+              <div class="svc-content">
+                <div class="svc-content__inner">
+                  <p>
+                    Manejo de carga consolidada (LTL) y camión completo (FTL)
+                    principales rutas Arica, Iquique, Santiago, Brasil, Uruguay,
+                    Perú, Paraguay y Argentina.
+                  </p>
+                </div>
+              </div>
+            </details>
+
+            <!-- 6 -->
+            <details class="svc-item">
+              <summary class="svc-summary">
+                <span class="svc-icon">🗺️</span>
+                <span class="svc-title"
+                  >Distribución nacional (9 departamentos)</span
+                >
+                <span class="svc-chevron">▾</span>
+              </summary>
+              <div class="svc-content">
+                <div class="svc-content__inner">
+                  <p>Movimiento de carga hacia los 9 departamentos del país.</p>
+                </div>
+              </div>
+            </details>
+
+            <!-- 9 -->
+            <details class="svc-item">
+              <summary class="svc-summary">
+                <span class="svc-icon">🔎</span>
+                <span class="svc-title"
+                  >Búsqueda y verificación de proveedores</span
+                >
+                <span class="svc-chevron">▾</span>
+              </summary>
+              <div class="svc-content">
+                <div class="svc-content__inner">
+                  <p>
+                    Búsqueda y verificación de proveedores alineados a las
+                    necesidades del cliente para garantizar la compra.
+                  </p>
+                </div>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <!-- ✅ Botón extra abajo a la derecha -->
+        <div class="nlc-services__footer">
+          <button
+            id="btnToggleAllServices"
+            class="nlc-services__toggle"
+            type="button"
+          >
+            Desplegar todos
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="clientes" class="nlc-section nlc-clients">
+      <div class="nlc-section__inner">
+        <header class="nlc-clients__header">
+          <h2 class="nlc-clients__title">Nuestros Clientes</h2>
+          <p class="nlc-clients__subtitle">
+            Marcas que confían en NLC Logistics.
+          </p>
+        </header>
+
+        <div class="webos-strip" aria-label="Dock estilo WebOS">
+          <button
+            class="webos-tile webos-tile--pink"
+            type="button"
+            aria-label="Cliente 1"
+          >
+            <img src="assets/clientes/cliente1.png" alt="Cliente 1" />
+          </button>
+
+          <button
+            class="webos-tile webos-tile--orange"
+            type="button"
+            aria-label="Cliente 2"
+          >
+            <img src="assets/clientes/cliente2.jpg" alt="Cliente 2" />
+          </button>
+
+          <button
+            class="webos-tile webos-tile--white"
+            type="button"
+            aria-label="Cliente 3"
+          >
+            <img src="assets/clientes/cliente3.png" alt="Cliente 3" />
+          </button>
+
+          <button
+            class="webos-tile webos-tile--white2"
+            type="button"
+            aria-label="Cliente 4"
+          >
+            <img src="assets/clientes/cliente4.png" alt="Cliente 4" />
+          </button>
+
+          <button
+            class="webos-tile webos-tile--dark"
+            type="button"
+            aria-label="Cliente 5"
+          >
+            <img src="assets/clientes/cliente5.jpg" alt="Cliente 5" />
+          </button>
+
+          <button
+            class="webos-tile webos-tile--white3"
+            type="button"
+            aria-label="Cliente 6"
+          >
+            <img src="assets/clientes/cliente6.jpg" alt="Cliente 6" />
+          </button>
+
+          <button
+            class="webos-tile webos-tile--red"
+            type="button"
+            aria-label="Cliente 7"
+          >
+            <img src="assets/clientes/cliente7.png" alt="Cliente 7" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="ubicanos" class="nlc-section nlc-location">
+      <div class="nlc-section__inner">
+        <header class="nlc-location__header">
+          <h2 class="nlc-location__title">Ubícanos</h2>
+          <p class="nlc-location__subtitle">
+            Visítanos en Santa Cruz de la Sierra o contáctanos por nuestros
+            canales.
+          </p>
+        </header>
+
+        <div class="nlc-location__grid">
+          <!-- MAPA -->
+          <div class="nlc-location__map">
+            <iframe
+              title="Ubicación NLC Logistics - Av. Trinidad N°48"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=-17.774638258109487,-63.175612187706996&z=17&output=embed"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <!-- INFO -->
+          <aside class="nlc-location__info">
+            <div class="nlc-location__card">
+              <h3 class="nlc-location__cardtitle">NLC Logistics</h3>
+
+              <div class="nlc-location__row">
+                <span class="nlc-location__label">Dirección</span>
+                <span class="nlc-location__value"
+                  >Av. Trinidad N°48, Santa Cruz de la Sierra</span
+                >
+              </div>
+
+              <div class="nlc-location__row">
+                <span class="nlc-location__label">Teléfono</span>
+                <a
+                  class="nlc-location__value nlc-location__link"
+                  href="tel:+59176689662"
+                >
+                  +591 76689662
+                </a>
+              </div>
+
+              <div class="nlc-location__row">
+                <span class="nlc-location__label">Correo</span>
+                <a
+                  class="nlc-location__value nlc-location__link"
+                  href="mailto:info@nlclog.com.bo"
+                >
+                  info@nlclog.com.bo
+                </a>
+              </div>
+
+              <div class="nlc-location__row">
+                <span class="nlc-location__label">Horario</span>
+                <span class="nlc-location__value"
+                  >Lunes a Viernes
+                  <p>9:00 a 13:00 // 14:00 a 18:30</p></span
+                >
+              </div>
+
+              <div class="nlc-location__actions">
+                <a
+                  class="nlc-location__btn"
+                  href="https://www.google.com/maps?q=-17.774638258109487,-63.175612187706996"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Abrir en Google Maps
+                </a>
+
+                <button
+                  class="nlc-location__btn nlc-location__btn--ghost"
+                  type="button"
+                  id="btnCopyAddress"
+                >
+                  Copiar dirección
+                </button>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="nlc-section nlc-contact">
+      <div class="nlc-section__inner">
+        <header class="nlc-contact__header">
+          <h2 class="nlc-contact__title">Contacto</h2>
+          <p class="nlc-contact__subtitle">
+            Escríbenos por WhatsApp o correo y te ayudamos con tu requerimiento.
+          </p>
+        </header>
+
+        <div class="nlc-contact__grid">
+          <!-- 1 -->
+          <article class="nlc-contact__card">
+            <h3 class="nlc-contact__name">Naomi Vaca</h3>
+            <p class="nlc-contact__role">Founder CEO</p>
+
+            <div class="nlc-contact__row">
+              <span class="nlc-contact__label">Correo</span>
+              <a
+                class="nlc-contact__value nlc-contact__link"
+                href="mailto:naomi.vaca@nlclog.com.bo"
+              >
+                naomi.vaca@nlclog.com.bo
+              </a>
+            </div>
+
+            <div class="nlc-contact__row">
+              <span class="nlc-contact__label">WhatsApp</span>
+              <a
+                class="nlc-contact__value nlc-contact__wa"
+                href="https://wa.me/59176689662?text=Hola%2C%20necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20NLC%2C%20%C2%BFMe%20puedes%20ayudar%3F"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                +591 76689662
+              </a>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="nlc-contact__card">
+            <h3 class="nlc-contact__name">Bastian Maldonado</h3>
+            <p class="nlc-contact__role">Sales &amp; Pricing</p>
+
+            <div class="nlc-contact__row">
+              <span class="nlc-contact__label">Correo</span>
+              <a
+                class="nlc-contact__value nlc-contact__link"
+                href="mailto:sales4@nlclog.com.bo"
+              >
+                sales4@nlclog.com.bo
+              </a>
+            </div>
+
+            <div class="nlc-contact__row">
+              <span class="nlc-contact__label">WhatsApp</span>
+              <a
+                class="nlc-contact__value nlc-contact__wa"
+                href="https://wa.me/59174653030?text=Hola%2C%20necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20NLC%2C%20%C2%BFMe%20puedes%20ayudar%3F"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                +591 74653030
+              </a>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="nlc-contact__card">
+            <h3 class="nlc-contact__name">Natalia Espinoza</h3>
+            <p class="nlc-contact__role">Sales &amp; Pricing</p>
+
+            <div class="nlc-contact__row">
+              <span class="nlc-contact__label">Correo</span>
+              <a
+                class="nlc-contact__value nlc-contact__link"
+                href="mailto:customer@nlclog.com.bo"
+              >
+                customer@nlclog.com.bo
+              </a>
+            </div>
+
+            <div class="nlc-contact__row">
+              <span class="nlc-contact__label">WhatsApp</span>
+              <a
+                class="nlc-contact__value nlc-contact__wa"
+                href="https://wa.me/59168933153?text=Hola%2C%20necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20NLC%2C%20%C2%BFMe%20puedes%20ayudar%3F"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                +591 68933153
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swiper (JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      // ===== MENU MOVIL =====
+      const burger = document.querySelector(".burger");
+      const navMobile = document.querySelector("#navMobile");
+
+      burger.addEventListener("click", () => {
+        navMobile.classList.toggle("is-open");
+        burger.setAttribute(
+          "aria-expanded",
+          String(navMobile.classList.contains("is-open"))
+        );
+      });
+
+      // Cierra menú al tocar un link
+      navMobile.addEventListener("click", (e) => {
+        if (e.target.matches("a")) {
+          navMobile.classList.remove("is-open");
+          burger.setAttribute("aria-expanded", "false");
+        }
+      });
+
+      // ===== SCROLL SUAVE (FALLBACK) =====
+      // Por si algún navegador/JS rompe el scroll-behavior del CSS.
+      document.querySelectorAll('a[href^="#"]').forEach((a) => {
+        a.addEventListener("click", (e) => {
+          const id = a.getAttribute("href");
+          if (!id || id === "#") return;
+
+          const target = document.querySelector(id);
+          if (!target) return;
+
+          e.preventDefault();
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+
+          // Cierra menú móvil si estaba abierto
+          if (navMobile.classList.contains("is-open")) {
+            navMobile.classList.remove("is-open");
+            burger.setAttribute("aria-expanded", "false");
+          }
+        });
+      });
+
+      // ===== SWIPER =====
+      const swiper = new Swiper(".nlc-swiper", {
+        loop: true,
+        speed: 650,
+        grabCursor: true,
+        effect: "slide",
+        allowTouchMove: true,
+
+        autoplay: {
+          delay: 5000, // ⏱️ 5 segundos
+          disableOnInteraction: false, // sigue aunque el usuario interactúe
+          pauseOnMouseEnter: true, // pausa al pasar el mouse (elegante)
+        },
+
+        navigation: {
+          nextEl: ".nlc-next",
+        },
+      });
+
+      // Previews derecha
+      const cards = document.querySelectorAll(".nlc-card");
+      cards.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const go = Number(btn.dataset.go);
+          swiper.slideToLoop(go, 650);
+        });
+      });
+
+      function updatePreviews() {
+        const i = swiper.realIndex;
+        const next1 = (i + 1) % 4;
+        const next2 = (i + 2) % 4;
+
+        const map = [
+          { img: "assets/carousel/slide1.jpg", label: "Conectamos destinos" },
+          {
+            img: "assets/carousel/slide2.jpg",
+            label: "Carga marítima y aérea",
+          },
+          { img: "assets/carousel/slide3.jpg", label: "Tecnología & tracking" },
+          { img: "assets/carousel/slide4.jpg", label: "Cobertura global" },
+        ];
+
+        const c1 = cards[0],
+          c2 = cards[1];
+
+        c1.querySelector("img").src = map[next1].img;
+        c1.querySelector(".nlc-card__label").textContent = map[next1].label;
+        c1.dataset.go = next1;
+
+        c2.querySelector("img").src = map[next2].img;
+        c2.querySelector(".nlc-card__label").textContent = map[next2].label;
+        c2.dataset.go = next2;
+      }
+
+      swiper.on("slideChange", updatePreviews);
+      updatePreviews();
+
+      // ===== SERVICIOS: desplegables =====
+      document.querySelectorAll(".svc").forEach((card) => {
+        const btn = card.querySelector(".svc__btn");
+        const panel = card.querySelector(".svc__panel");
+
+        btn.addEventListener("click", () => {
+          const isOpen = card.classList.toggle("is-open");
+          btn.setAttribute("aria-expanded", String(isOpen));
+
+          // Ajusta altura para animación suave
+          if (isOpen) {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          } else {
+            panel.style.maxHeight = "0px";
+          }
+        });
+      });
+
+      // ===== Acordeón suave para <details> =====
+      const svcDetails = Array.from(document.querySelectorAll(".svc-item"));
+      const toggleAllBtn = document.querySelector(".nlc-services__toggle");
+
+      function openDetails(details) {
+        const content = details.querySelector(".svc-content");
+        if (!content) return;
+
+        // ya abierto
+        if (details.open) return;
+
+        details.open = true; // necesario para que sea "real details"
+
+        // empezar desde 0
+        content.style.height = "0px";
+
+        // medir el alto real y animar
+        const target = content.scrollHeight;
+        requestAnimationFrame(() => {
+          content.style.height = target + "px";
+        });
+
+        // al terminar, dejar height:auto (para que crezca si cambia el contenido)
+        const onEnd = (e) => {
+          if (e.propertyName !== "height") return;
+          content.style.height = "auto";
+          content.removeEventListener("transitionend", onEnd);
+        };
+        content.addEventListener("transitionend", onEnd);
+      }
+
+      function closeDetails(details) {
+        const content = details.querySelector(".svc-content");
+        if (!content) return;
+
+        // ya cerrado
+        if (!details.open) return;
+
+        // si estaba en auto, fijarlo al valor actual para poder animar
+        const current = content.scrollHeight;
+        content.style.height = current + "px";
+
+        // forzar reflow
+        content.offsetHeight;
+
+        // animar a 0
+        requestAnimationFrame(() => {
+          content.style.height = "0px";
+        });
+
+        // al terminar, cerrar el <details>
+        const onEnd = (e) => {
+          if (e.propertyName !== "height") return;
+          details.open = false;
+          content.removeEventListener("transitionend", onEnd);
+        };
+        content.addEventListener("transitionend", onEnd);
+      }
+
+      // Interceptar click en summary para animar (sin perder "multi-open")
+      svcDetails.forEach((details) => {
+        const summary = details.querySelector(".svc-summary");
+        const content = details.querySelector(".svc-content");
+        if (!summary || !content) return;
+
+        // aseguramos estado inicial
+        if (details.open) {
+          content.style.height = "auto";
+        } else {
+          content.style.height = "0px";
+        }
+
+        summary.addEventListener("click", (e) => {
+          e.preventDefault();
+
+          if (details.open) closeDetails(details);
+          else openDetails(details);
+
+          setTimeout(updateToggleAllLabel, 300);
+        });
+      });
+
+      function updateToggleAllLabel() {
+        if (!toggleAllBtn) return;
+        const allOpen = svcDetails.length && svcDetails.every((d) => d.open);
+        toggleAllBtn.textContent = allOpen ? "Cerrar todos" : "Desplegar todos";
+      }
+
+      // Botón "Desplegar todos" con animación
+      if (toggleAllBtn) {
+        toggleAllBtn.addEventListener("click", () => {
+          const allOpen = svcDetails.every((d) => d.open);
+
+          if (allOpen) {
+            svcDetails.forEach(closeDetails);
+            toggleAllBtn.textContent = "Desplegar todos";
+          } else {
+            svcDetails.forEach(openDetails);
+            toggleAllBtn.textContent = "Cerrar todos";
+          }
+        });
+
+        updateToggleAllLabel();
+      }
+
+      // ===== UBÍCANOS: copiar dirección =====
+      const btnCopyAddress = document.querySelector("#btnCopyAddress");
+      if (btnCopyAddress) {
+        btnCopyAddress.addEventListener("click", async () => {
+          const text = "Av. Trinidad N°48, Santa Cruz de la Sierra";
+          try {
+            await navigator.clipboard.writeText(text);
+            btnCopyAddress.textContent = "¡Dirección copiada!";
+            setTimeout(
+              () => (btnCopyAddress.textContent = "Copiar dirección"),
+              1600
+            );
+          } catch {
+            // fallback simple
+            prompt("Copia la dirección:", text);
+          }
+        });
+      }
+
+      // Año automático en footer
+      const yearSpan = document.getElementById("yearNow");
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    </script>
+    <!-- FOOTER -->
+    <footer class="nlc-footer">
+      <div class="nlc-footer__inner">
+        <!-- Redes sociales -->
+        <div class="nlc-footer__socials">
+          <a
+            href="#"
+            class="nlc-footer__social"
+            aria-label="Facebook"
+            title="Facebook"
+          >
+            <img src="assets/rrss/facebook.svg" alt="Facebook" />
+          </a>
+
+          <a
+            href="#"
+            class="nlc-footer__social"
+            aria-label="Instagram"
+            title="Instagram"
+          >
+            <img src="assets/rrss/instagram.svg" alt="Instagram" />
+          </a>
+
+          <a
+            href="#"
+            class="nlc-footer__social"
+            aria-label="TikTok"
+            title="TikTok"
+          >
+            <img src="assets/rrss/tiktok.svg" alt="TikTok" />
+          </a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="nlc-footer__copy">
+          © <span id="yearNow"></span> NLC Logistics. Todos los derechos
+          reservados.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
